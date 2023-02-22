@@ -1,0 +1,211 @@
+/*
+Formato móvil: 414x896.
+*/
+@media (max-width: 415px){
+    #hero-list{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0em 0.5em 0em 0.5em
+    }
+    
+    .hero-section{
+        display: flex;
+        align-items: center;
+        margin: 1em 0em 1em 0em;
+        padding: 1em;
+        background-color: #405275b7;
+        width: 21em;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 5em 0em 5em 0em;
+        transition: 0.5s;
+    }
+
+    .hero-section:hover{
+        border-radius: 0em 5em 0em 5em;
+        background-color: #f9a01a9c;
+    }
+
+    .hero-section:hover .more-info{
+        background-color: #405275;
+        color: #218ffe;
+        transition: 0.5s;
+        border-radius: 0em 5em 0em 5em;
+    }
+    
+    .hero-section img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: none;
+        object-position: 45% 20%;    
+        padding: 0.5em;
+        transition: 0.5s;
+    }
+
+    .hero-section:hover img{
+        box-shadow: 0em 0em 1em 0em;
+    }
+    
+    .hero-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-info h2{
+        margin: 0.65em 0em 0em 0em;
+        color: white;
+        transition: 0.5s;
+    }
+
+    .hero-section:hover .hero-info h2{
+        color: black;
+    }
+
+    .hero-info p{
+        margin: 0.5em 0em 0.75em 0em;
+        color: white;
+        transition: 0.5s;
+    }
+
+    .hero-info div{
+        margin: 0em 1em 1.15em 1em;
+        color: white;
+        transition: 0.5s;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .hero-section:hover .hero-info p{
+        color: black;
+    }
+
+    .hero-section:hover .hero-info div{
+        color: black;
+    }
+
+    .more-info{
+        height: 4em;
+        width: 24em;
+        font-weight: 900;
+        border: none;
+        border-radius: 5em 0em 5em 0em;
+        background-color:#f99e1a;
+        color: #ffe600;
+        transition: 0.5s;
+    }
+
+    .more-info:hover{
+        box-shadow: 0px 4px;
+        transform: scale(0.95);
+    }
+}
+
+/*
+Formato escritorio: 1920x1080.
+*/
+@media (min-width: 415px){
+    #hero-list{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1em 0.5em 1em 0.5em
+    }
+    
+    .hero-section{
+        display: flex;
+        align-items: center;
+        margin: 1em 0em 1em 0em;
+        padding: 1em;
+        background-color: #405275b7;
+        width: 35em;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 5em 0em 5em 0em;
+        transition: 0.5s;
+    }
+
+    .hero-section:hover{
+        border-radius: 0em 5em 0em 5em;
+        background-color: #f9a01a9c;
+    }
+
+    .hero-section:hover .more-info{
+        background-color: #405275;
+        color: #218ffe;
+        transition: 0.5s;
+        border-radius: 0em 5em 0em 5em;
+    }
+    
+    .hero-section img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: none;
+        object-position: 45% 20%;    
+        padding: 0.5em;
+        transition: 0.5s;
+    }
+
+    .hero-section:hover img{
+        box-shadow: 0em 0em 1em 0em;
+    }
+    
+    .hero-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-info h2{
+        margin: 0.5em 0em 0em 0em;
+        color: white;
+        transition: 0.5s;
+    }
+
+    .hero-section:hover .hero-info h2{
+        color: black;
+    }
+
+    .hero-info p{
+        margin: 0.5em 0em 0.75em 0em;
+        color: white;
+        transition: 0.5s;
+    }
+
+    .hero-info div{
+        margin: 0em 1em 1.15em 1em;
+        color: white;
+        transition: 0.5s;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .hero-section:hover .hero-info p{
+        color: black;
+    }
+
+    .hero-section:hover .hero-info div{
+        color: black;
+    }
+    
+    .more-info{
+        height: 4em;
+        width: 24em;
+        font-weight: 900;
+        border: none;
+        border-radius: 5em 0em 5em 0em;
+        background-color:#f99e1a;
+        color: #ffe600;
+        transition: 0.5s;
+    }
+
+    .more-info:hover{
+        box-shadow: 0px 4px;
+        transform: scale(0.95);
+    }
+}

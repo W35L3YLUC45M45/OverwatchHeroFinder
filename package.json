@@ -1,0 +1,49 @@
+{
+  "name": "pweb-p2",
+  "version": "0.0.0",
+  "description": "Segona pràctica de projectes web (grup 1)",
+  "main": "app.js",
+  "scripts": {
+    "build": "npm run html-minifier && npm run media && npm run unga && npm run scripts && npm run links",
+    "start": "node app.js",
+    "media": "xcopy /E /I src\\media dist\\media",
+    "scripts": "uglifyjs src\\js\\components\\search.js src\\js\\components\\list.js src\\js\\pages\\index.js -o dist\\js\\script.js -c",
+    "links": "npx check-html-links dist",
+    "unga": "if exist dist\\js\\ (echo yes) else (echo no && mkdir dist\\js)",
+    "prehtml-minifier": "del /S /Q dist",
+    "html-minifier": "html-minifier --input-dir src --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-css true",
+    "posthtml-minifier": "html-minifier --input-dir src --output-dir dist --file-ext css --remove-comments --collapse-whitespace --minify-css true",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qwertyamc/Pweb-P2.git"
+  },
+  "keywords": [
+    "pràctica",
+    "windows",
+    "web",
+    "node",
+    "projecte",
+    "vue",
+    "overwatch"
+  ],
+  "author": "Arnau Metaute, Wesley Lucas, Laura Ros",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Qwertyamc/Pweb-P2/issues"
+  },
+  "homepage": "https://github.com/Qwertyamc/Pweb-P2#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "*",
+    "vue": "^3.2.22",
+    "standard": "^16.0.4"
+  },
+  "devDependencies": {
+    "check-html-links": "^0.2.3",
+    "html-minifier": "^4.0.0",
+    "uglify-js": "^3.14.5"
+  }
+}

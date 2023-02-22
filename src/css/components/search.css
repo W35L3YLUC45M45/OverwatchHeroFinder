@@ -1,0 +1,120 @@
+/*
+Formato móvil: 414x896.
+*/
+@media (max-width: 415px){
+    form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0em 0em 1em 0em;
+    }
+
+    .searchTerm{
+        height: 3em;
+        width: 18em;
+        border: 0em;
+        margin: 0em 1em 0em 0em;
+        padding: 0em 0em 0em 1em;
+        font-family: 'Russo One';
+        background-color: #eeeeee;
+        color: #8f8f8f;
+        border-radius: 2em 0em 0em 2em;
+        outline: none;
+        transition: .5s;
+        box-shadow: 5px 5px 7px 1px;
+    }
+
+    .searchTerm:hover{
+        outline: 1em;
+        border: 1em;
+    }
+
+    .searchTerm input[type=text]{
+        color: #8f8f8f;
+    }
+
+    .searchButton{
+        height: 3em;
+        width: 6em;
+        padding: 0em 0.25em 0em 0em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #218ffe;
+        color: #405275;
+        font-family: 'Russo One';
+        font-weight: 600;
+        border-radius: 0em 2em 2em 0em;
+        border: none;
+        box-shadow: 5px 5px 7px 1px;
+        transition: 0.3s;
+    }
+
+    .searchButton:hover{
+        background-color: #405275;
+        color: #218ffe;
+        transition: 0.3s;
+    }
+}
+
+/*
+Formato escritorio: 1920x1080.
+*/
+@media (min-width: 415px){
+    form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0em 0em 2em 0em;
+    }
+
+    .searchTerm{
+        height: 4em;
+        width: 32em;
+        border: 0em;
+        margin: 0em 1em 0em 0em;
+        padding: 0em 2em;
+        font-family: 'Russo One';
+        background-color: #eeeeee;
+        color: #8f8f8f;
+        border-radius: 2em 0em 0em 2em;
+        outline: none;
+        transition: .5s;
+        box-shadow: 5px 5px 7px 1px;
+    }
+
+    .searchTerm:hover{
+        outline: 1em;
+        border: 1em;
+    }
+
+    .searchTerm input[type=text]{
+        color: #8f8f8f;
+    }
+
+    .searchButton{
+        height: 4em;
+        width: 7em;
+        padding: 0em 0.75em 0em 0em;
+        margin: 0em 0em 0em 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #218ffe;
+        color: #405275;
+        font-family: 'Russo One';
+        font-weight: 600;
+        border-radius: 0em 5em 5em 0em;
+        border: none;
+        box-shadow: 5px 5px 7px 1px;
+        transition: 0.3s;
+    }
+
+    .searchButton:hover{
+        background-color: #405275;
+        color: #218ffe;
+        transition: 0.3s;
+    }
+}

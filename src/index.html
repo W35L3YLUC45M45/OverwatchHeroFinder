@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pweb-P2</title>
+    <link rel="stylesheet" href="css/pages/index.css">
+    <link rel="stylesheet" href="css/components/info.css">
+    <link rel="stylesheet" href="css/components/list.css">
+    <link rel="stylesheet" href="css/components/search.css">
+    <link href="https://fonts.googleapis.com/css?family=Russo One" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/script.js" type="module"></script>
+</head>
+    <body>
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Overwatch_circle_logo.svg/600px-Overwatch_circle_logo.svg.png" alt="overwatch logo" id=main-logo>
+            <h1 id="main-title">Overwatch Database</h1>
+        </header>
+        <body>
+            <article id="hero-list">
+                <hero-search></hero-search>
+                <hero-node
+                v-for="hero in overwatch"
+                v-bind:hero="hero"
+                v-bind:key="hero.id"
+            ></hero-node>
+            </article>
+        </body>
+        <footer>
+            <h1 class="authors">P2 Authors:</h1>
+            <p id="wesley">Wesley Lucas Mas - wesley.lucas@students.salle.url.edu</p>
+            <p id="arnau">Arnau Metaute Carrillo - arnau.metaute@students.salle.url.edu</p>
+            <p id="laura">Laura Ros Lopez - laura.ros@salle.url.edu</p>
+        </footer>
+    </body>
+</html>
